@@ -93,8 +93,9 @@ ul{
 .menubar2{
     position: absolute;
     bottom: -70px;
-    display: block;
+    left: 0;
     width: 100%;
+    z-index: 5;
     height: 80px;
     background-color: transparent;
 }
@@ -172,7 +173,7 @@ a{
 .mouraba{
     width: 50%;
     margin-bottom: 50px;
-    position: relative;
+    /* position: relative; */
     padding :50px 50px 50px 130px;
     background-color: rgb(15 116 143 / 70%);
     z-index: 2;
