@@ -383,3 +383,66 @@ a{
     }
 }
 /* end og design */
+/* start of portfolio */
+.options{
+    display: flex;
+    margin: 30px 0px;
+    justify-content: center;
+}
+.options .active{
+    background-color: #19c8fa;
+    color: white;
+}
+.options span{
+    padding:15px;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.photos .box{
+     width: 25%; 
+     position: relative;
+}
+.photos .box img{
+    width: 100%;
+}
+.photos .box .klem{
+    /* display: none; */
+    position: absolute;
+    background-color: white;
+    bottom: -120px;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5s;
+}
+.porfolio .photos .box:hover .klem{
+    bottom:0;
+    transition: 0.5s;
+}
+.more{
+    display: flex;
+    justify-content: center;
+}
+.more button{
+    margin: 30px;
+    cursor: pointer;
+    padding :15px 30px;
+    border: none;
+    color: white;
+    background-color: #19c8fa;
+}
+
+ @media(max-width:1200px){
+    .photos .box{
+        width: 50%;
+    }
+} 
+@media(max-width:767px){
+    .photos .box{
+        width: 100%;
+    }
+} 
+/* end of portfolio */
