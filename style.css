@@ -320,3 +320,66 @@ a{
 }
 
 /* end of cards  */
+/* start of design */
+.design{
+    height: 90vh;
+    background-image: url("design.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+.design::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+.design .container{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.design .container img{
+    z-index: 2;
+    position: absolute;
+    bottom:-80px;
+}
+.dword{
+    width: 60%;
+    position: absolute;
+    right:0;
+    top:20%;
+    z-index: 2;
+    background-color: rgb(15 116 143 / 70%);
+    padding: 50px;
+}
+.dword .ih{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    color: white;
+    font-size: 15px;
+    padding: 10px ;
+    font-weight:400;
+}
+.dword h1{
+    color: white;
+    font-weight: 400;
+}
+@media(max-width:991px){
+    .design .container img{
+        display: none;
+    }
+    .dword{
+        width: 100%;
+        bottom: 10%;
+        top: 10%;
+    }
+}
+/* end og design */
