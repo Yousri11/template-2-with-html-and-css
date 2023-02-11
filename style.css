@@ -608,3 +608,129 @@ a{
     padding: 10px;
     border-radius: 50%;
 }
+/* start of skills */
+.skills{
+    padding: 100px 0px;
+}
+.skills .container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 100px;
+}
+@media(max-width:991px){
+    .skills .container{
+        flex-direction: column;
+    }
+    .person{
+        flex-direction: column;
+    }
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+.person img{
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+}
+.person .kl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+}
+.person .kl h3{
+    text-align: right;
+    color: #eee;
+}
+.test .spans span{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #eee;
+}
+.test .spans span:nth-child(2){
+    border: none;
+    background-color: #19c8fa;
+}
+.spans{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+}
+.skill .l{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    text-align: left;
+}
+.pc{
+    height: 30px;
+    width: 100%;
+    background-color: #eee;
+    position: relative;
+    z-index: -1;
+}
+.pc span{
+    content: "";
+    width: attr("you");
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #19c8fa;
+    z-index: 1;
+}
+.num{
+    position: absolute;
+    /* left: calc(90% - 20px); */
+    right: -17px;
+    top:-50px;
+    background-color: black;
+    color:white;
+    padding:3px;
+    border-radius: 5px;
+}
+.num::after{
+    content: "";
+    position:absolute;
+    height: 0;
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color:black transparent transparent transparent;
+    left: calc(50% - 10px);
+    bottom: -20px;
+    z-index: 2;
+}
+
+/* end of skills */
