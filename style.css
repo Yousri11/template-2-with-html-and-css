@@ -734,3 +734,134 @@ a{
 }
 
 /* end of skills */
+/* start of quote */
+.quote{
+    background-image:url("quote.jpg");
+    background-size: cover;
+    position: relative;
+}
+.quote::after{
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.quote .container{
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+.quote .container p{
+    font-size: 30px;
+    margin-bottom:30px;
+}
+/* end of quote */
+/* start of pricing */
+.subs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: space-between;
+    margin-top: 100px;
+}
+.sub{
+    background-color: #eee;
+    width: 23%;
+    margin-bottom: 10px;
+    border-top: 1px solid #19c8fa;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub h1{
+    margin-top: 20px;
+    
+    width: 100%;
+}
+.normal{
+    font-size: 30px;
+    font-weight: 500;
+}
+.number{
+    border-bottom: 1px solid #19c8fa;
+    font-size: 60px;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 50px;
+}
+.number::before{
+    content: "$";
+    position: absolute;
+    left: calc(50% - 60px);
+    top:0;
+    font-weight: 500;
+    font-size: 30px;
+}
+.number::after{
+    content: "/Mo";
+    position: absolute;
+    right: calc(50% - 70px);
+    bottom: 50px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.sub h2{
+    width: 60%;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid #19c8fa;
+    padding: 15px;
+    
+}
+.sub :nth-child(6){
+    width: 100%;
+}
+.sub button{
+    padding:15px 20px;
+    background-color: transparent;
+    border: 1px solid #19c8fa;
+    margin: 20px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    color: darkmagenta;
+}
+.pricing .container{
+    text-align: center;
+}
+.pricing .container button{
+    padding: 15px 25px;
+    background-color: #19c8fa;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+.idk{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.pricing{
+    margin-bottom:100px
+}
+@media (max-width:991px){
+    .sub{
+        width:48%;
+    }
+}
+@media (max-width:767px){
+    .sub{
+        width:98%;
+    }
+}
+/* end of pricing */
